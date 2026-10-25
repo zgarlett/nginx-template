@@ -1,5 +1,5 @@
 {
-  "name": "@inventory/backend",
+  "name": "@statement/backend",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -9,7 +9,7 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@inventory/shared": "1.0.0",
+    "@statement/shared": "1.0.0",
     "express": "^4.21.2",
     "mysql2": "^3.24.5"
   },

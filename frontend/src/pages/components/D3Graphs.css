@@ -1,0 +1,74 @@
+.d3-chart-card {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid #dfe6e3;
+  background: #fff;
+}
+
+.d3-chart-card h2 {
+  margin: 0 0 14px;
+  color: #203033;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.d3-chart {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  color: #788583;
+  font-family: inherit;
+  font-size: 11px;
+}
+
+.d3-chart .domain,
+.d3-chart .tick line {
+  stroke: #dfe6e3;
+}
+
+.d3-chart-label {
+  fill: #657370;
+  font-size: 11px;
+}
+
+.d3-line {
+  fill: none;
+  stroke: #117e73;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.5px;
+}
+
+.d3-line-points circle,
+.d3-scatter-points circle {
+  fill: #117e73;
+  stroke: #fff;
+  stroke-width: 1.5px;
+  transition: r 120ms ease, fill 120ms ease;
+}
+
+.d3-line-points circle:hover,
+.d3-scatter-points circle:hover,
+.d3-line-points circle:focus-visible,
+.d3-scatter-points circle:focus-visible {
+  fill: #d56f52;
+  r: 7px;
+  outline: none;
+}
+
+.d3-line-points circle:focus-visible,
+.d3-scatter-points circle:focus-visible {
+  stroke: #203033;
+  stroke-width: 2px;
+}
+
+.d3-chart-empty {
+  min-height: 180px;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  color: #718083;
+  font-size: 13px;
+}

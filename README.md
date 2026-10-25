@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Open the Vite URL printed in the terminal (by default `http://localhost:5173`). The API runs on port `3000`; Vite proxies `/api` requests to it. The first run seeds example products in `backend/data/products.json`.
+Open the Vite URL printed in the terminal (by default `http://localhost:5173`). The API runs on port `3001`; Vite proxies `/api` requests to it. The first run seeds example products in `backend/data/products.json`.
 
 To create a production build:
 

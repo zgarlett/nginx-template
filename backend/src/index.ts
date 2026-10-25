@@ -1,10 +1,10 @@
 import express from "express";
-import { type ProductInput, type InventorySummary } from "@inventory/shared";
+import { type ProductInput, type InventorySummary } from "@statement/shared";
 import loginRoutes from "./routes/LoginRoutes.js";
 import statementRoutes from "./routes/StatementRoutes.js";
 
 const app = express();
-const port = Number(process.env.PORT ?? 3000);
+const port = Number(process.env.PORT ?? 3001);
 
 app.use(express.json());
 

@@ -4,10 +4,15 @@ services:
       context: .
       dockerfile: Dockerfile.backend
     environment:
-      PORT: 3000
+      PORT: 3001
       DATA_DIR: /app/data
+      MYSQL_HOST: 192.168.1.151
+      MYSQL_PORT: 3399
+      MYSQL_USER: root
+      MYSQL_PASSWORD: Amandaisawesome1!
+      MYSQL_DATABASE: cc-transactions
     volumes:
-      - inventory-data:/app/data
+      - statement-data:/app/data
     restart: unless-stopped
 
   frontend:
@@ -17,8 +22,8 @@ services:
     depends_on:
       - backend
     ports:
-      - "8080:80"
+      - "8071:8081"
     restart: unless-stopped
 
 volumes:
-  inventory-data:
+  statement-data:

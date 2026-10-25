@@ -9,12 +9,15 @@
     "frontend"
   ],
   "scripts": {
-    "predev": "npm run build -w @inventory/shared",
-    "dev": "concurrently -k -n api,web -c blue,green \"npm run dev -w @inventory/backend\" \"npm run dev -w @inventory/frontend\"",
-    "build": "npm run build -w @inventory/shared && npm run build -w @inventory/backend && npm run build -w @inventory/frontend",
-    "start": "npm run start -w @inventory/backend"
+    "predev": "npm run build -w @statement/shared",
+    "dev": "concurrently -k -n api,web -c blue,green \"npm run dev -w @statement/backend\" \"npm run dev -w @statement/frontend\"",
+    "build": "npm run build -w @statement/shared && npm run build -w @statement/backend && npm run build -w @statement/frontend",
+    "start": "npm run start -w @statement/backend"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.7"
   }
 }
