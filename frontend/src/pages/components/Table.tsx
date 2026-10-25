@@ -9,7 +9,7 @@ interface Props {
 
 const Table: React.FC<Props> = ({ data, headers }) => {
     const { error, loading, del } = useDelete<{ deletedRows: number; filenames: string[] }>(
-        `/api/statements/files`,
+        `${backendApiBaseUrl}statements/files`,
     );
     const [selectedRows, setSelectedRows] = useState<Set<number>>(new Set());
     const [deletedRows, setDeletedRows] = useState<Set<number>>(new Set());

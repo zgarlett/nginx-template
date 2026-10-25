@@ -8,7 +8,7 @@ interface Props {
 }
 
 const UsefulInfoPage: React.FC<Props> = ({ }) => {
-    const { data, loading } = useGet(`/api/statements/files`);
+    const { data, loading } = useGet(`${backendApiBaseUrl}statements/files`);
     const filenames = (data as { results?: any[] } | undefined)?.results ?? [];
 
     useEffect(() => {

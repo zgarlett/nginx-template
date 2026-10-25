@@ -128,7 +128,7 @@ const UploadPage: FC = () => {
 		setError('');
 		setMessage('');
 		try {
-			const response = await fetch(`/api/statements/import`, {
+			const response = await fetch(`${backendApiBaseUrl}statements/import`, {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify(payload),

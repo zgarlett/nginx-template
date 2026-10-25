@@ -1,4 +1,5 @@
 import { useGet } from '../hooks/Api';
+import { backendApiBaseUrl } from '../constants';
 import './FinanceMetricsPage.css';
 
 type MetricRow = Record<string, unknown>;
@@ -88,7 +89,7 @@ function MetricTable({ rows }: { rows: MetricRow[] }) {
 
 const FinanceMetricsPage = () => {
   const { data, error, loading } = useGet<FinanceMetricsResponse>(
-    '/api/statements/metrics',
+    `${backendApiBaseUrl}statements/metrics`,
   );
   const metrics = data?.metrics;
   const yearToDate = metrics?.yearToDateSpending?.[0]?.year_to_date_spending;
