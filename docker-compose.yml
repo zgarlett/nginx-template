@@ -22,7 +22,7 @@ services:
     depends_on:
       - backend
     ports:
-      - "8071:80"
+      - "8071:8081"
     restart: unless-stopped
 
 volumes:
